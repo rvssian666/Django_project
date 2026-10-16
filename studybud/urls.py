@@ -26,5 +26,6 @@ from django.urls import path, include
 los url sirven para que los usuarios puedan acceder a las funciones de la web app'''
 urlpatterns = [
     path('admin/', admin.site.urls), 
+    path('api/v1/', include('base.api.urls')), 
     path('',include('base.urls')) 
 ]

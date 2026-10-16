@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    image: studybud-api:latest
+    container_name: studybud-web
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      DJANGO_DEBUG: "1"
+      DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1,0.0.0.0"
+    restart: unless-stopped

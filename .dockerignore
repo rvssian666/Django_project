@@ -1,0 +1,36 @@
+# Entornos virtuales
+env/
+venv/
+.venv/
+
+# Control de versiones
+.git/
+.gitignore
+
+# Artefactos de Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Base de datos local (el contenedor ejecuta migrate al arrancar)
+*.sqlite3
+db.sqlite3
+
+# Estaticos recolectados
+staticfiles/
+
+# Editor y documentacion
+.idea/
+.vscode/
+README.md
+*.md
+
+# Ficheros de Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
