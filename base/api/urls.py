@@ -18,6 +18,7 @@ router.register('messages', MessageViewSet, basename='message')
 
 urlpatterns = [
     path('auth/token/', CustomAuthToken.as_view(), name='token'),
+    path('auth/', include('rest_framework.urls')),
     path('users/me/', CurrentUserView.as_view(), name='user-me'),
     path('', include(router.urls)),
 ]

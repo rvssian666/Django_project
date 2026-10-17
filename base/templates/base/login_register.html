@@ -2,13 +2,13 @@
 
 {% block content %}
 <div>
-    <form method="POST " action="">
+    <form method="POST" action="">
         {% csrf_token %}
         <label for="username">Username:</label>
-        <input type = "text" name="username" placeholder = "Enter username ">
-        <label for="username">Password:</label>
-        <input type = "text" name="password" placeholder = "Enter password ">
-        <input type="submit" name="Login">
+        <input type="text" name="username" placeholder="Enter username">
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter password">
+        <input type="submit" value="Login">
     </form>
 </div>
 {% endblock content%}
